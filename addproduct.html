@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addproduct</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+        form{
+            width: 45%;
+            height: 500px;
+            border: 1px solid rgb(199, 197, 197);
+            margin: auto;
+           background-color: rgb(231, 220, 231);
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           margin-top: 80px;
+        }
+        h1{
+            margin-top: 10%;
+            margin-bottom: 10%;
+        }
+       
+        input{
+            width: 50%;
+            height: 8%;
+            border-radius: 10px;
+
+        }
+        /* how to style input submit type directly */
+
+        input[type="submit"]{
+            width: 25%;
+            background-color: brown;
+            color: white;
+            font-weight: bolder;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <form onsubmit="addproduct(event)">
+        <h1>Add Products Here</h1>
+
+        <label> Product Name</label>
+        <input type="text" id="pname" /></br>
+        <label> Product Price</label>
+        <input type="number" id="pprice" /></br>
+        <label> Product Image</label>
+        <input type="text" id="pimage"/></br>
+        <input type="submit" value="Add Here"/>
+    </form>
+    <script>
+        function addproduct(event){
+            event.preventDefault();
+            // alert("product adding....");
+            var pname = document.getElementById("pname").value;
+            var pprice = document.getElementById("pprice").value;
+            var pimage = document.getElementById("pimage").value;
+
+            var product = {pname, pprice, pimage};
+
+            var ls = JSON.parse(localStorage.getItem("tpractice_product")) || [];
+ 
+            ls.push(product);
+        
+            localStorage.setItem("tpractice_product", JSON.stringify(ls));
+
+            alert("product added successfully");
+            window.location.href = `./mproduct.html`;
+            var pname = document.getElementById("pname").value ="";
+            var pprice = document.getElementById("pprice").value = "";
+            var pimage = document.getElementById("pimage").value = "";
+        }
+    </script>
+</body>
+</html>

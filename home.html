@@ -1,0 +1,1807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/5e60e11a93.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 100%;
+            height: 7500px;
+            /* border: 5px solid red; */
+        }
+
+        #navbar {
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: #f2e9e9;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        #navbar>div:nth-child(1) {
+            width: 15%;
+            height: 80px;
+            /* border: 1px solid red; */
+            /* text-align: right; */
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 42%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 13px;
+            margin-left: 35%;
+
+        }
+
+        #navbar>div:nth-child(2) {
+            width: 53%;
+            height: 45px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+        }
+
+        #navbar>div:nth-child(2)>input {
+            width: 80%;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-top: 5px;
+            border: none;
+            margin-left: 2%;
+            font-size: 15px;
+        }
+
+        #navbar>div:nth-child(2)>img {
+            width: 4.5%;
+            height: 24px;
+            /* border: 1px solid red; */
+            margin-top: 12px;
+            margin-left: 2%;
+        }
+
+        #navbar>div:nth-child(3) {
+            width: 24%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            margin-left: 3%;
+            /* background-color: white; */
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #navbar>div:nth-child(3)>div {
+            width: 22%;
+            height: 45px;
+            /* border: 1px solid red; */
+        }
+
+        #navbar>div:nth-child(3)>div>img {
+            width: 36%;
+            height: 24px;
+            /* border: 1px solid red; */
+            margin-left: 27%;
+            box-sizing: border-box;
+            /* margin-top: 5px; */
+        }
+
+        #navbar>div:nth-child(3)>div>div {
+            width: 100%;
+            height: 15px;
+            /* border: 1px solid red; */
+        }
+
+        #navbar>div:nth-child(3)>div>div>p {
+            color: grey;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        #second {
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            margin: auto;
+            color: rgb(81, 79, 79);
+            font-size: 14px;
+        }
+
+        #second>div {
+            color: #000;
+            font-size: 14px;
+        }
+
+        #second>div:nth-child(1) {
+            width: 9.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 15px;
+        }
+
+        #second>div:nth-child(2) {
+            width: 3.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(3) {
+            width: 5.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(4) {
+            width: 6%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(5) {
+            width: 3.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(6) {
+            width: 3%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(7) {
+            width: 8.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(8) {
+            width: 4.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(9) {
+            width: 10.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(10) {
+            width: 12%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(11) {
+            width: 3%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #third {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid red; */
+        }
+
+        #third>img {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid red; */
+            /* object-fit: contain; */
+        }
+
+        #forth {
+            width: 19%;
+            height: 20px;
+            /* border: 1px solid red; */
+            margin-left: 40%;
+            margin-top: 25px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #forth>div:nth-child(1) {
+            background-color: brown;
+        }
+
+        #forth>div {
+            width: 2.8%;
+            height: 7px;
+            /* border: 1px solid red; */
+            border-radius: 5px;
+            margin-top: 4px;
+            background-color: rgb(163, 160, 160);
+        }
+
+        #fifth {
+            width: 90%;
+            height: 160px;
+            /* border: 1px solid red; */
+            border-bottom: 2px solid brown;
+            margin-left: 5%;
+            margin-top: 10px;
+        }
+
+        #fifth>div:nth-child(1) {
+            width: 50%;
+            height: 60px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 40px;
+            margin-left: 26%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+        }
+
+        #fifth>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #category {
+            width: 85%;
+            height: 535px;
+            /* border: 1px solid red; */
+            margin-left: 7.5%;
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        #category>div {
+            width: 14.2%;
+            height: 250px;
+            border: 1px solid grey;
+            border-radius: 10px;
+
+        }
+
+        #category>div>img {
+            width: 100%;
+            height: 165px;
+            /* border: 1px solid red; */
+            /* border-radius: 10px; */
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        #category>div>:nth-child(2) {
+            width: 100%;
+            height: 65px;
+            /* border: 1px solid black; */
+        }
+
+        #category>div>:nth-child(2)>div:nth-child(1) {
+            width: 100%;
+            height: 15px;
+            /* border: 10px solid black; */
+            margin-top: 10px;
+            color: brown;
+            text-align: center;
+        }
+
+        #category>div>:nth-child(2)>div:nth-child(2) {
+            width: 40%;
+            height: 17px;
+            /* border: 1px solid black; */
+            margin-top: 12px;
+            color: grey;
+            margin-left: 32%;
+            display: flex;
+
+        }
+
+        #sixth {
+            width: 90%;
+            height: 160px;
+            /* border: 1px solid red; */
+            border-bottom: 2px solid brown;
+            margin-left: 5%;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+
+        #sixth>div:nth-child(1) {
+            width: 50%;
+            height: 60px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 40px;
+            margin-left: 26%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+            text-align: center;
+        }
+
+        #sixth>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #collection {
+            width: 87%;
+            height: 410px;
+            /* border: 1px solid red; */
+            margin-left: 6.5%;
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #collection>div {
+            width: 31.8%;
+            height: 410px;
+            border: 1px solid rgb(201, 200, 200);
+            border-radius: 10px;
+        }
+
+        #collection>div>img {
+            width: 100%;
+            height: 360px;
+            /* border: 1px solid red; */
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        #collection>div>:nth-child(2) {
+            width: 94%;
+            height: 50px;
+            /* border: 1px solid black; */
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 900;
+            margin: auto;
+        }
+
+        #collection>div>:nth-child(2)>:nth-child(1) {
+            width: 50%;
+            height: 45px;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            padding-top: 12px;
+            color: brown;
+        }
+
+        #collection>div>:nth-child(2)>:nth-child(2) {
+            width: 26.5%;
+            height: 45px;
+            /* border: 1px solid black; */
+            display: flex;
+            box-sizing: border-box;
+            padding-top: 12px;
+            color: grey;
+        }
+
+        #seven {
+            width: 88%;
+            height: 410px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 80px;
+
+        }
+
+        #seven>img {
+            width: 100%;
+            height: 410px;
+            /* border: 1px sol id red; */
+            border-radius: 10px;
+            border-radius: 30px;
+        }
+
+        #eight {
+            width: 90%;
+            height: 150px;
+            /* border: 1px solid red; */
+            margin-left: 5%;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid brown;
+        }
+
+        #eight>div:nth-child(1) {
+            width: 50%;
+            height: 60px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 40px;
+            margin-left: 25%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+            text-align: center;
+        }
+
+        #eight>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #nine {
+            width: 88%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* margin-top: 20px; */
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        #nine>div:nth-child(1) {
+            width: 3.5%;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin-top: 180px;
+            border-radius: 50px;
+            background-color: rgb(218, 212, 212);
+        }
+
+        #nine>div:nth-child(1)>i {
+            margin-top: 13px;
+            margin-left: 15px;
+            color: black;
+        }
+
+        #nine>div:nth-child(2) {
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #nine>div:nth-child(2)>div {
+            width: 23.5%;
+            height: 400px;
+            border: 1px solid rgb(201, 200, 200);
+        }
+
+        #nine>div:nth-child(2)>div>img {
+            width: 100%;
+            height: 250px;
+            /* border: 1px solid rgb(201, 200, 200); */
+        }
+
+        #nine>div:nth-child(2)>div>:nth-child(2) {
+            width: 90%;
+            height: 40px;
+            /* border: 1px solid rgb(201, 200, 200); */
+            margin: auto;
+            color: rgb(115, 114, 114);
+        }
+
+        #nine>div:nth-child(2)>div>:nth-child(3) {
+            width: 90%;
+            height: 40px;
+            /* border: 1px solid rgb(201, 200, 200); */
+            margin: auto;
+        }
+
+        #nine>div:nth-child(2)>div>:nth-child(4) {
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid brown; */
+            margin: auto;
+            color: rgb(175, 94, 94);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 16px;
+            font-weight: 900;
+        }
+
+        #nine>div:nth-child(3) {
+            width: 3.5%;
+            height: 40px;
+            /* border: 1px solid red; */
+            margin-top: 180px;
+            border-radius: 50px;
+            background-color: rgb(218, 212, 212);
+
+        }
+
+        #nine>div:nth-child(3)>i {
+            margin-top: 13px;
+            margin-left: 15px;
+            color: black;
+        }
+
+        #new {
+            width: 90%;
+            height: 130px;
+            /* border: 1px solid red; */
+            border-bottom: 2px solid brown;
+            margin-left: 5%;
+            margin-top: 10px;
+        }
+
+        #new>div:nth-child(1) {
+            width: 50%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 40px;
+            margin-left: 25%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+            text-align: center;
+        }
+
+        #new>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #ten {
+            width: 88%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin: 6%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #ten>div {
+            width: 32%;
+            height: 400px;
+            /* border: 1px solid red; */
+            /* margin: 6%; */
+        }
+
+        #ten>div>img {
+            width: 100%;
+            height: 400px;
+            /* border: 1px solid red; */
+            border-radius: 20px;
+        }
+
+        #shop {
+            width: 90%;
+            height: 120px;
+            /* border: 1px solid red; */
+            border-bottom: 2px solid brown;
+            margin-left: 5%;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+
+        #shop>div:nth-child(1) {
+            width: 50%;
+            height: 60px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* margin-top: 20px; */
+            margin-left: 25%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+            text-align: center;
+        }
+
+        #shop>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #eleven {
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin-left: 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #eleven>div {
+            width: 32.4%;
+            height: 400px;
+            border: 1px solid grey;
+            border-radius: 15px;
+        }
+
+        #eleven>div>img {
+            width: 100%;
+            height: 350px;
+            /* border: 1px solid red; */
+            border-radius: 15px;
+        }
+
+        #eleven>div>:nth-child(2) {
+            width: 94%;
+            height: 40px;
+            /* border: 10px solid black; */
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 900;
+            margin: auto;
+        }
+
+        #eleven>div>:nth-child(2)>:nth-child(1) {
+            width: 17%;
+            height: 40px;
+            /* border: 1px solid black; */
+            box-sizing: border-box;
+            padding-top: 13px;
+            color: brown;
+        }
+
+        #eleven>div>:nth-child(2)>:nth-child(2) {
+            width: 29%;
+            height: 40px;
+            /* border: 1px solid black; */
+            display: flex;
+            box-sizing: border-box;
+            padding-top: 12px;
+            color: grey;
+        }
+
+        #tata {
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 80px;
+        }
+
+        #tata>img {
+            width: 100%;
+            height: 400px;
+            /* border: 1px solid red; */
+            border-radius: 20px;
+        }
+
+        #video {
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+
+        #video>video {
+            width: 100%;
+            height: 400px;
+            /* border: 1px solid red; */
+            border-radius: 20px;
+            object-fit: cover;
+        }
+
+
+        #riva {
+            width: 90%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 80px;
+            display: flex;
+        }
+
+        #riva>img {
+            width: 50%;
+            height: 400px;
+            /* border: 1px solid red; */
+
+        }
+
+        #riva>img:nth-child(1) {
+            width: 50%;
+            height: 400px;
+            /* border: 1px solid red; */
+            border-bottom-left-radius: 20px;
+            border-top-left-radius: 20px;
+        }
+
+        #riva>img:nth-child(2) {
+            width: 50%;
+            height: 400px;
+            /* border: 1px solid red; */
+            border-bottom-right-radius: 20px;
+            border-top-right-radius: 20px;
+        }
+
+        #guide {
+            width: 90%;
+            height: 150px;
+            /* border: 1px solid red; */
+            border-bottom: 2px solid brown;
+            margin-left: 5%;
+            margin-top: 10px;
+        }
+
+        #guide>div:nth-child(1) {
+            width: 50%;
+            height: 60px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 50px;
+            margin-left: 25%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+            text-align: center;
+        }
+
+        #guide>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* margin-top: 40px; */
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #find {
+            width: 90%;
+            height: 200px;
+            /* border: 1px solid rgb(167, 166, 166); */
+            margin: auto;
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #find>img {
+            width: 47%;
+            height: 200px;
+            /* border: 1px solid red; */
+
+        }
+
+        #find>img:nth-child(1) {
+            width: 49.3%;
+            height: 200px;
+            border: 1px solid rgb(167, 166, 166);
+            border-radius: 20px;
+        }
+
+        #find>img:nth-child(2) {
+            width: 49.3%;
+            height: 200px;
+            border: 1px solid rgb(167, 166, 166);
+            border-radius: 20px;
+        }
+
+        #us {
+            width: 90%;
+            height: 130px;
+            /* border: 1px solid red; */
+            border-bottom: 2px solid brown;
+            margin-left: 5%;
+            margin-top: 10px;
+        }
+
+        #us>div:nth-child(1) {
+            width: 50%;
+            height: 60px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            margin-top: 60px;
+            margin-left: 25%;
+            font-size: 22px;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            word-spacing: 6px;
+            color: brown;
+            text-align: center;
+        }
+
+        #us>div:nth-child(2) {
+            width: 50%;
+            height: 20px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* margin-top: 40px; */
+            margin-left: 25%;
+            font-size: 18px;
+            color: grey;
+            text-align: center;
+        }
+
+        #connect {
+            width: 90%;
+            height: 150px;
+            /* border: 1px solid red; */
+            margin: auto;
+            /* border-radius: 20px; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #connect>img {
+            width: 32.5%;
+            height: 150px;
+            border: 1px solid rgb(176, 175, 175);
+            border-radius: 5px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 630px;
+            border: 1px solid #f2e9e9;
+            margin-top: 100px;
+            background-color: #f2e9e9;
+        }
+
+        #main {
+            width: 88%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+        #left {
+            width: 70%;
+            height: 400px;
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+
+        #left>div {
+            width: 33.3%;
+            height: 400px;
+            /* border: 1px solid red; */
+
+        }
+
+        #left>div>div:nth-child(1) {
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+            color: rgb(151, 5, 151);
+        }
+
+        #left>div>div {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            font-size: 20px;
+            color: grey;
+        }
+
+        #left>div:nth-child(3)>div {
+            display: flex;
+
+        }
+
+        #left>div:nth-child(3)>div>i {
+            margin-right: 30px;
+            font-size: 25px;
+        }
+
+        #right {
+            width: 27%;
+            height: 400px;
+            /* border: 1px solid red; */
+        }
+
+        #right>div:nth-child(1) {
+            width: 91%;
+            height: 70px;
+            /* border: 1px solid red; */
+            color: rgb(151, 5, 151);
+            font-size: 20px;
+            margin-left: 5%;
+        }
+
+        #right>div:nth-child(2) {
+            width: 91%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+        }
+
+        #right>div:nth-child(2)>div {
+            width: 48%;
+            height: 50px;
+            /* border: 1px solid red; */
+        }
+
+        #right>div:nth-child(2)>div:nth-child(1)>img {
+            width: 100%;
+            height: 40px;
+            /* border: 10px solid red; */
+            border-radius: 10px;
+        }
+
+        #right>div:nth-child(2)>div:nth-child(2)>img {
+            width: 100%;
+            height: 40px;
+            /* border: 10px solid red; */
+            border-radius: 10px;
+        }
+
+        #right>div:nth-child(3) {
+            width: 91%;
+            height: 25px;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+        }
+
+        #end {
+            width: 88%;
+            height: 100px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #end>div:nth-child(1) {
+            width: 62%;
+            height: 80px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #end>div:nth-child(1)>img {
+            width: 8%;
+            height: 22px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+        }
+
+        #end>div:nth-child(2) {
+            width: 29.5%;
+            height: 80px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            padding-top: 15px;
+        }
+
+        @media screen and (max-width:750px) {
+
+            #screen {
+                width: 100%;
+                height: 4500px;
+            }
+
+            #navbar {
+                width: 100%;
+                height: 70px;
+            }
+
+            #navbar>div:nth-child(3) {
+                display: none;
+            }
+
+            #navbar>div:nth-child(2) {
+                width: 75%;
+            }
+
+            #navbar>div:nth-child(1) {
+                width: 20%;
+            }
+
+            #second {
+                display: none;
+            }
+
+            #third {
+                display: none;
+            }
+
+            #fifth {
+                width: 100%;
+                height: 100px;
+
+
+            }
+
+            #fifth>div:nth-child(1) {
+                width: 100%;
+                height: 50px;
+                font-size: 15px;
+                margin-left: 1px;
+            }
+
+            #fifth>div:nth-child(2) {
+                display: none;
+
+            }
+
+            #forth {
+                display: none;
+            }
+
+            #category {
+                width: 100%;
+                height: 800px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            #category>div {
+                width: 25%;
+                height: 250px;
+                justify-content: space-between;
+            }
+
+            #sixth {
+                width: 100%;
+                height: 100px;
+            }
+
+            #sixth>div:nth-child(1) {
+                width: 100%;
+                height: 50px;
+                font-size: 15px;
+                margin-left: 1px;
+            }
+
+            #collection {
+                width: 100%;
+                height: 300px;
+                display: flex;
+                justify-content: space-between;
+
+            }
+
+            #collection>div {
+                width: 30%;
+                height: 300px;
+                border: 1px solid grey;
+            }
+
+            #collection>div>img {
+                width: 100%;
+                height: 250px;
+            }
+
+            #gift {
+                display: none;
+            }
+
+            #seven {
+                display: none;
+            }
+
+            #eight {
+                width: 100%;
+                height: 100px;
+            }
+
+            #nine {
+                display: none;
+            }
+
+            #new {
+                display: none;
+            }
+
+            #ten {
+                display: none;
+            }
+
+            #shop {
+                display: none;
+            }
+
+            #guide {
+                display: none;
+            }
+
+            #us {
+                display: none;
+            }
+
+            #left>div:nth-child(1) {
+                display: none;
+            }
+
+            #left>div:nth-child(2) {
+                display: none;
+            }
+
+            #left>div:nth-child(3) {
+                width: 50%;
+            }
+
+            #right {
+                width: 50%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="screen">
+        <div id="navbar">
+            <div>
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Tanishq_Logo.svg/1024px-Tanishq_Logo.svg.png" />
+            </div>
+            <div>
+                <input type="text" placeholder="Search for Gold Jewellery, Diamond Jewellery and more..." />
+                <img
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNvbXBvbmVudF8yMTdfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDI3IDI3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNyAyNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjEuMnB4O30KCS5zdDF7ZmlsbDpub25lO30KCS5zdDJ7ZmlsbDojODMyNzI5O3N0cm9rZS13aWR0aDoxLjJweDt9Cgkuc3Qze29wYWNpdHk6MC44O30KCS5zdDR7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDV7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cgkuc3Q2e2ZpbGw6bm9uZTtzdHJva2U6IzgzMjcyOTtzdHJva2Utd2lkdGg6MTt9Cjwvc3R5bGU+CjxnPgoJPGNpcmNsZSBpZD0iRWxsaXBzZV8xMiIgY2xhc3M9InN0MCIgY3g9IjEzLjMiIGN5PSIxMy41IiByPSIxMiIvPgoJPHBhdGggaWQ9IlBhdGhfMjUzIiBjbGFzcz0ic3QxIiBkPSJNMCwwaDI3djI3SDBWMHoiLz4KCTxnIGlkPSJQYXRoXzQzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy43NyA0LjAxMSkiPgoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LjUsMEMxNC44LDAsMTksNC4zLDE5LDkuNWMwLDUuMi00LjMsOS41LTkuNSw5LjVDNC4yLDE5LDAsMTQuNywwLDkuNUMwLDQuMiw0LjMsMCw5LjUsMHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNOS41LDAuNWMtNSwwLTksNC05LDlzNCw5LDksOXM5LTQsOS05UzE0LjUsMC41LDkuNSwwLjUgTTkuNSwwQzE0LjgsMCwxOSw0LjIsMTksOS41UzE0LjgsMTksOS41LDE5CgkJCVMwLDE0LjcsMCw5LjVTNC4zLDAsOS41LDB6Ii8+Cgk8L2c+Cgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS4yNDIgNS40NSkiPgoJCTxnIGlkPSJjIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJPGcgaWQ9Ikdyb3VwXzE0MzQ2IiBjbGFzcz0ic3QzIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDAiIGNsYXNzPSJzdDEiIGQ9Ik0wLDB2MTZoMTZWMEgweiBNMTUsMTVIMVYxaDE0TDE1LDE1eiIvPgoJCQk8L2c+CgkJPC9nPgoJCTxnIGlkPSJiLTIiPgoJCQk8ZyBpZD0iYy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJCTxnIGlkPSJHcm91cF8xNDM0NyIgY2xhc3M9InN0MyI+CgkJCQkJPHBhdGggaWQ9IlBhdGhfMTQ0NSIgY2xhc3M9InN0MSIgZD0iTTAsMHYxNmgxNlYwSDB6IE0xNSwxNUgxVjFoMTRMMTUsMTV6Ii8+CgkJCQk8L2c+CgkJCTwvZz4KCQkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODk0IDIuNjcpIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDYiIGNsYXNzPSJzdDQiIGQ9Ik03LjIsOC4yQzUuNyw4LjIsNC41LDcsNC41LDUuNXMxLjItMi43LDIuNy0yLjdTOS44LDQsOS44LDUuNWMwLDAsMCwwLDAsMAoJCQkJCUM5LjgsNyw4LjYsOC4yLDcuMiw4LjJ6Ii8+CgkJCQk8cGF0aCBpZD0iUGF0aF8xNDQ3IiBjbGFzcz0ic3Q1IiBkPSJNMTMsMnY3LjRjMCwwLjEtMC4xLDAuMi0wLjIsMC4yYzAsMCwwLDAsMCwwSDEuNmMtMC4xLDAtMC4yLTAuMS0wLjMtMC4yYzAsMCwwLDAsMCwwVjIKCQkJCQljMC0wLjEsMC4xLTAuMiwwLjMtMC4yaDEuOGwxLjEtMS42SDEwbDEsMS42aDEuOEMxMi45LDEuOCwxMywxLjksMTMsMnoiLz4KCQkJCTxnIGlkPSJSZWN0YW5nbGVfOTk0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuOTkgMy4wMDIpIj4KCQkJCQk8cmVjdCB4PSIwIiB5PSIwIiBjbGFzcz0ic3QwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+CgkJCQkJPHBvbHlnb24gY2xhc3M9InN0NiIgcG9pbnRzPSIwLjUsMC41IDAuNSwwLjUgMC41LDAuNSAJCQkJCSIvPgoJCQkJPC9nPgoJCQk8L2c+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" />
+                <img
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMCAzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzAgMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7fQ0KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojNjMxNjE3O3N0cm9rZS13aWR0aDoxLjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxnIGlkPSJNaWNyb3Bob25lX0hvdmVyIj4NCgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+DQoJCTxnIGlkPSJjIj4NCgkJCTxwYXRoIGlkPSJQYXRoXzE0MDIiIGNsYXNzPSJzdDAiIGQ9Ik0wLDB2MjhoMjhWMEwwLDB6IE0yNi4yLDI2LjJIMS44VjEuOGgyNC41VjI2LjJ6Ii8+DQoJCTwvZz4NCgkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuOTkyIDIuMzc0KSI+DQoJCQk8ZyBpZD0iR3JvdXBfMTQzMTIiPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDMiIGNsYXNzPSJzdDEiIGQ9Ik0xMS41LDkuNVYyLjlDMTEuNiwwLjMsOS42LTEuOSw3LTJDNC40LTEuOSwyLjQsMC4zLDIuNSwyLjl2Ni42Yy0wLjEsMi42LDEuOSw0LjgsNC41LDQuOQ0KCQkJCQlDOS42LDE0LjMsMTEuNiwxMi4xLDExLjUsOS41eiIvPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDQiIGNsYXNzPSJzdDEiIGQ9Ik0wLDcuNHYzLjljMCw0LjQsMy4xLDcuOSw3LDcuOXM3LTMuNSw3LTcuOVY3LjQiLz4NCgkJCQk8bGluZSBpZD0iTGluZV8xMTUiIGNsYXNzPSJzdDEiIHgxPSI3IiB5MT0iMTkuMSIgeDI9IjciIHkyPSIyMy45Ii8+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                <img
+                    src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik00LjA4LDExLjA3YzAtMy44NiwzLjEzLTYuOTksNi45OS02Ljk5czYuOTksMy4xMyw2Ljk5LDYuOTktMy4xMyw2Ljk5LTYuOTksNi45OWMtMy44NiwwLTYuOTktMy4xMy02Ljk5LTYuOTloMFptMTkuNDIsMTEuMzNsLTUuODctNS44N2MyLjkzLTMuNTIsMi41Ny04LjcxLS44MS0xMS44cy04LjU5LTIuOTctMTEuODIsLjI3Yy0zLjI0LDMuMjMtMy4zNSw4LjQ0LS4yNywxMS44MnM4LjI4LDMuNzMsMTEuOCwuODFsNS44Nyw1Ljg3LDEuMS0xLjFaIi8+PC9zdmc+" />
+            </div>
+            <div>
+                <div>
+                    <img onclick="window.location.href='./addproduct.html'"
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyOCAyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjggMjg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDE0NzkxMzg0Nzg0NTA1MDEwMjA1MDAwMDAwOTgxNjUwODMxODQwMjc0MjcxOV8pO30NCgkuc3Qxe29wYWNpdHk6MC40Njt9DQoJLnN0MntmaWxsOm5vbmU7fQ0KCS5zdDN7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS1saW5lam9pbjpyb3VuZDt9DQo8L3N0eWxlPg0KPGc+DQoJPGRlZnM+DQoJCTxyZWN0IGlkPSJTVkdJRF8xXyIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4Ii8+DQoJPC9kZWZzPg0KCTxjbGlwUGF0aCBpZD0iU1ZHSURfMDAwMDAwMjY4NDE4MTM5MjEwNjUyNzkyNzAwMDAwMTIxNjI5NzI0MzkxMDQ1MDMxNzFfIj4NCgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiLz4NCgk8L2NsaXBQYXRoPg0KCTxnIGlkPSJTdG9yZV9JY29uX0RlZmF1bHRfU3RhdGVfMSIgc3R5bGU9ImNsaXAtcGF0aDp1cmwoI1NWR0lEXzAwMDAwMDI2ODQxODEzOTIxMDY1Mjc5MjcwMDAwMDEyMTYyOTcyNDM5MTA0NTAzMTcxXyk7Ij4NCgkJPGcgaWQ9ImIiPg0KCQkJPGcgaWQ9ImMiPg0KCQkJCTxnIGlkPSJHcm91cF8xNDIwOSIgY2xhc3M9InN0MSI+DQoJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNjkiIGNsYXNzPSJzdDIiIGQ9Ik0wLDB2MjhoMjhWMEgweiBNMjYuMiwyNi4ySDEuOFYxLjhoMjQuNVYyNi4yeiIvPg0KCQkJCTwvZz4NCgkJCTwvZz4NCgkJCTxnIGlkPSJkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjUwNCAzLjUwNCkiPg0KCQkJCTxnIGlkPSJlIj4NCgkJCQkJPGcgaWQ9Ikdyb3VwXzE0MjExIj4NCgkJCQkJCTxyZWN0IGlkPSJSZWN0YW5nbGVfOTkyNCIgeD0iOC43IiB5PSI4LjciIGNsYXNzPSJzdDMiIHdpZHRoPSIxMS4xIiBoZWlnaHQ9IjExLjkiLz4NCgkJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNzAiIGNsYXNzPSJzdDMiIGQ9Ik0yMSw0LjN2NC4zSDBWNC4zTDMuNSwwaDE0TDIxLDQuM3oiLz4NCgkJCQkJCTxsaW5lIGlkPSJMaW5lXzgzIiBjbGFzcz0ic3QzIiB4MT0iNC45IiB5MT0iOC40IiB4Mj0iNC45IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NCIgY2xhc3M9InN0MyIgeDE9IjEwLjUiIHkxPSI4LjQiIHgyPSIxMC41IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NSIgY2xhc3M9InN0MyIgeDE9IjE2LjEiIHkxPSI4LjQiIHgyPSIxNi4xIiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NiIgY2xhc3M9InN0MyIgeDE9IjEuMiIgeTE9IjguNCIgeDI9IjEuMiIgeTI9IjIxIi8+DQoJCQkJCTwvZz4NCgkJCQk8L2c+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                    <div>
+                        <p>STORES</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO3N0cm9rZS13aWR0aDoxLjRweDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMywxNS43NWMtMy42NywwLTExLDEuODQtMTEsNS41djIuNzVIMjR2LTIuNzVjMC0zLjY2LTcuMzMtNS41LTExLTUuNVptMC0xMy43NWMtMy4wNCwwLTUuNSwyLjQ2LTUuNSw1LjVzMi40Niw1LjUsNS41LDUuNSw1LjUtMi40Niw1LjUtNS41LTIuNDYtNS41LTUuNS01LjVabTAsMTYuNWMzLjcxLDAsNy45NywxLjc3LDguMjUsMi43NUg0Ljc1Yy4zMi0uOTksNC41NS0yLjc1LDguMjUtMi43NW0wLTEzLjc1YzEuNTEsMCwyLjc1LDEuMjQsMi43NSwyLjc1cy0xLjI0LDIuNzUtMi43NSwyLjc1LTIuNzUtMS4yNC0yLjc1LTIuNzUsMS4yNC0yLjc1LDIuNzUtMi43NSIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMTMsMTUuNzVjLTMuNjcsMC0xMSwxLjg0LTExLDUuNXYyLjc1SDI0di0yLjc1YzAtMy42Ni03LjMzLTUuNS0xMS01LjVabTAtMTMuNzVjLTMuMDQsMC01LjUsMi40Ni01LjUsNS41czIuNDYsNS41LDUuNSw1LjUsNS41LTIuNDYsNS41LTUuNS0yLjQ2LTUuNS01LjUtNS41Wm0wLDE2LjVjMy43MSwwLDcuOTcsMS43Nyw4LjI1LDIuNzVINC43NWMuMzItLjk5LDQuNTUtMi43NSw4LjI1LTIuNzVtMC0xMy43NWMxLjUxLDAsMi43NSwxLjI0LDIuNzUsMi43NXMtMS4yNCwyLjc1LTIuNzUsMi43NS0yLjc1LTEuMjQtMi43NS0yLjc1LDEuMjQtMi43NSwyLjc1LTIuNzUiLz48L3N2Zz4=" />
+                    <div id="login">
+                        <p>ACCOUNT</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNiAyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYgMjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojODMyNzI5O30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRUZFM0UzO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMSwyMC41TDEzLDIwLjZsLTAuMS0wLjFDNy4xLDE1LjQsMy4zLDEyLDMuMyw4LjZjMC0yLjQsMS44LTQuMSw0LjMtNC4xYzEuOSwwLDMuNywxLjIsNC40LDIuOGgyLjMKCQljMC42LTEuNiwyLjUtMi44LDQuMy0yLjhjMi40LDAsNC4zLDEuOCw0LjMsNC4xQzIyLjgsMTIuMSwxOC45LDE1LjQsMTMuMSwyMC41eiBNMTguNSwyLjJjLTIuMSwwLTQuMiwxLTUuNSwyLjUKCQljLTEuMy0xLjUtMy40LTIuNS01LjUtMi41QzMuNywyLjIsMC44LDUsMC44LDguN2MwLDQuNSw0LjEsOC4xLDEwLjQsMTMuNmwxLjgsMS41bDEuOC0xLjZjNi4zLTUuNSwxMC40LTkuMiwxMC40LTEzLjYKCQlDMjUuMiw1LDIyLjIsMi4yLDE4LjUsMi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEzLjEsMjAuNUwxMywyMC42bC0wLjEtMC4xQzcuMSwxNS40LDMuMywxMiwzLjMsOC42YzAtMi40LDEuOC00LjEsNC4zLTQuMWMxLjksMCwzLjcsMS4yLDQuNCwyLjhoMi4zCgkJYzAuNi0xLjYsMi41LTIuOCw0LjMtMi44YzIuNCwwLDQuMywxLjgsNC4zLDQuMUMyMi44LDEyLjEsMTguOSwxNS40LDEzLjEsMjAuNXoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOC41LDIuMmMtMi4xLDAtNC4yLDEtNS41LDIuNWMtMS4zLTEuNS0zLjQtMi41LTUuNS0yLjVDMy43LDIuMiwwLjgsNSwwLjgsOC43YzAsNC41LDQuMSw4LjEsMTAuNCwxMy42CgkJbDEuOCwxLjVsMS44LTEuNmM2LjMtNS41LDEwLjQtOS4yLDEwLjQtMTMuNkMyNS4yLDUsMjIuMiwyLjIsMTguNSwyLjJ6Ii8+CjwvZz4KPC9zdmc+Cg==" />
+                    <div>
+                        <p>WISHLIST</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYiIgZD0iTTIwLjAyLDIwLjAyYy0xLjI5LDAtMi4zMywxLjA1LTIuMzMsMi4zNHMxLjA0LDIuMzQsMi4zMywyLjM0LDIuMzQtMS4wNSwyLjM0LTIuMzQtMS4wNS0yLjM0LTIuMzQtMi4zNFptLTExLjcsMGMtMS4yOSwwLTIuMzMsMS4wNS0yLjMzLDIuMzRzMS4wNCwyLjM0LDIuMzMsMi4zNCwyLjM0LTEuMDUsMi4zNC0yLjM0LTEuMDUtMi4zNC0yLjM0LTIuMzRabS0uOTgtMTQuMDRoMTQuMjJsLTMuMjMsNS44NUgxMC4xbC0yLjc3LTUuODVabTEwLjk5LDguMTljLjg4LDAsMS42NS0uNDgsMi4wNS0xLjIxbDQuMTktNy41OWMuNDMtLjc3LS4xMy0xLjczLTEuMDItMS43M0g2LjIybC0xLjEtMi4zNEgxLjI5VjMuNjRIMy42M0w3Ljg1LDEyLjUybC0xLjU4LDIuODZjLS44NSwxLjU3LC4yNywzLjQ3LDIuMDUsMy40N2gxNC4wNHYtMi4zNEg4LjMxbDEuMjktMi4zNGg4LjcyWiIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMjAuMDIsMjAuMDJjLTEuMjksMC0yLjMzLDEuMDUtMi4zMywyLjM0czEuMDQsMi4zNCwyLjMzLDIuMzQsMi4zNC0xLjA1LDIuMzQtMi4zNC0xLjA1LTIuMzQtMi4zNC0yLjM0Wm0tMTEuNywwYy0xLjI5LDAtMi4zMywxLjA1LTIuMzMsMi4zNHMxLjA0LDIuMzQsMi4zMywyLjM0LDIuMzQtMS4wNSwyLjM0LTIuMzQtMS4wNS0yLjM0LTIuMzQtMi4zNFptLS45OC0xNC4wNGgxNC4yMmwtMy4yMyw1Ljg1SDEwLjFsLTIuNzctNS44NVptMTAuOTksOC4xOWMuODgsMCwxLjY1LS40OCwyLjA1LTEuMjFsNC4xOS03LjU5Yy40My0uNzctLjEzLTEuNzMtMS4wMi0xLjczSDYuMjJsLTEuMS0yLjM0SDEuMjlWMy42NEgzLjYzTDcuODUsMTIuNTJsLTEuNTgsMi44NmMtLjg1LDEuNTcsLjI3LDMuNDcsMi4wNSwzLjQ3aDE0LjA0di0yLjM0SDguMzFsMS4yOS0yLjM0aDguNzJaIi8+PC9zdmc+" />
+                    <div>
+                        <p>CART</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://icons.veryicon.com/png/o/internet--web/website-icons/logout-8.png" />
+                    <div id="logout">
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div>
+                <p>ALL JEWELLERY</p>
+            </div>
+            <div>
+                <p>GOLD</p>
+            </div>
+            <div>
+                <p>DIAMOND</p>
+            </div>
+            <div>
+                <p>EARRINGS</p>
+            </div>
+            <div>
+                <p>RINGS</p>
+            </div>
+            <div>
+                <p>MIA</p>
+            </div>
+            <div>
+                <p>COLLECTIONS</p>
+            </div>
+            <div>
+                <p>RIVAAH</p>
+            </div>
+            <div>
+                <p>GOLDEN HARVEST</p>
+            </div>
+            <div>
+                <p>CORPORATE GIFTING</p>
+            </div>
+            <div>
+                <p>MORE</p>
+            </div>
+        </div>
+        <div id="third">
+<img src="https://www.tanishq.co.in/dw/image/v2/BKCK_PRD/on/demandware.static/-/Library-Sites-TanishqSharedLibrary/default/dw792507e8/homepage/HeroBanner/friendship-day-mobile.jpg"/>        </div>
+        <div id="forth">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="fifth">
+            <div>
+                <h1>Shop Jewellery By Category</h1>
+            </div>
+            <div>
+                <h5>Browse through your favourite categories. We've got them all!</h5>
+            </div>
+        </div>
+        <div id="category">
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/GoldCoin.webp" />
+                <div>
+                    <div>
+                        <p>Gold Coins</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/earrings-new.webp" />
+                <div>
+                    <div>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/Pendant.webp" />
+                <div>
+                    <div>
+                        <p>Pandants</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/CoupleRing.webp" />
+                <div>
+                    <div>
+                        <p>Engagement Rings</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/Chain.webp" />
+                <div>
+                    <div>
+                        <p>Chains</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/Bangle.webp" />
+                <div>
+                    <div>
+                        <p>Bangles</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/Ring.webp" />
+                <div>
+                    <div>
+                        <p>Finger Rings</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/mangalsutras-new.webp" />
+                <div>
+                    <div>
+                        <p>Mangalsutra</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/Neckwear.webp" />
+                <div>
+                    <div>
+                        <p>Neckwear</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/bracelets-new.webp" />
+                <div>
+                    <div>
+                        <p>Bracelets</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/nosepins-new.webp" />
+                <div>
+                    <div>
+                        <p>Nose Pins</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCategory/pendant-set-new.webp" />
+                <div>
+                    <div>
+                        <p>Pandant Sets</p>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sixth">
+            <div>
+                <h1>Shop by Collection</h1>
+            </div>
+            <div>
+                <h5>Whatever the occasion, we've got a beautiful piece of jewellery for you.</h5>
+            </div>
+        </div>
+        <div id="collection">
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCollection/dor-new.jpg" />
+                <div>
+                    <div>
+                        <p>Dor</p>
+                    </div>
+                    <div>
+                        <p>Explore More</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCollection/gold-coins.jpg" />
+                <div>
+                    <div>
+                        <p>Exclusive Coins</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByCollection/stunning-ear-new.jpg" />
+                <div>
+                    <div>
+                        <p>Stunning Every Ear</p>
+                    </div>
+                    <div>
+                        <p>Explore More</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="seven">
+            <img src="Capture.JPG" />
+        </div>
+        <div id="eight">
+            <div>
+                <h1>Top Sellers</h1>
+            </div>
+            <div>
+                <h5>Check out the products that our customers love the most</h5>
+            </div>
+        </div>
+        <div id="nine">
+            <div><i class="fa-solid fa-angle-right"></i></div>
+            <div>
+                <div>
+                    <img src="Capture1.JPG" />
+                    <div>
+                        <p>Sleek Gold Foxtail Chain</p>
+                    </div>
+                    <div>
+                        <h3>₹ 29641</h3>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Capture2.JPG" />
+                    <div>
+                        <p>Simple Gold Chain For Kids</p>
+                    </div>
+                    <div>
+                        <h3>₹ 18469</h3>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Capture3.JPG" />
+                    <div>
+                        <p>Surreal Modern Abstract</br>Floral Gold Pendant </p>
+                    </div>
+                    <div>
+                        <h3>₹ 5848</h3>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                    </div>
+                </div>
+                <div>
+                    <img src="Capture4.JPG" />
+                    <div>
+                        <p>Sleek Gold Kamal Chain</p>
+                    </div>
+                    <div>
+                        <h3>₹ 19742</h3>
+                    </div>
+                    <div>
+                        <p>Explore</p>
+                    </div>
+                </div>
+            </div>
+            <div><i class="fa-solid fa-angle-right"></i></div>
+        </div>
+        <div id="new">
+            <div>
+                <h1>New For You!</h1>
+            </div>
+            <div>
+                <h5>Our latest releases, just for you!</h5>
+            </div>
+        </div>
+        <div id="ten">
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/newForYou/sparkling-avenues.jpg" />
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/newForYou/pretty-in-pink.jpg" />
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/newForYou/dotsanddashes.jpg" />
+            </div>
+        </div>
+        <div id="shop">
+            <div>
+                <h1>Shop by Gender</h1>
+            </div>
+            <div>
+                <h5>Explore our latest designs curated just for you!</h5>
+            </div>
+        </div>
+        <div id="eleven">
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByGender/Woman.jpg" />
+                <div>
+                    <div>
+                        <p>Women</p>
+                    </div>
+                    <div>
+                        <p>Explore More</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByGender/Men.jpg" />
+                <div>
+                    <div>
+                        <p>Men</p>
+                    </div>
+                    <div>
+                        <p>Explore More</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/ShopByGender/kid.jpg" />
+                <div>
+                    <div>
+                        <p>Kids</p>
+                    </div>
+                    <div>
+                        <p>Explore More</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="tata">
+            <img
+                src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/a94e7dbe-ef00-4523-b3c7-5d9ad861ccbf/desktop/naturefinest-desktop.jpg?MOD=AJPERES&amp;CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-a94e7dbe-ef00-4523-b3c7-5d9ad861ccbf-desktop-otFZisl" />
+        </div>
+        <div id="video">
+            <video controls>
+                <source src="https://staticimg.titan.co.in/Tanishq/Banners/video/ge-dt.mp4">
+            </video>
+        </div>
+        <div id="riva">
+            <img src="https://staticimg.titan.co.in/Tanishq/Banners/home/rivaahLeadgen/Rivaah-Bride.jpg" />
+            <img
+                src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/2caee158-9a61-4b74-b677-4748a5fb2e5e/desktop/rivah_D.jpg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-2caee158-9a61-4b74-b677-4748a5fb2e5e-desktop-odkhNkR" />
+        </div>
+        <div id="guide">
+            <div>
+                <h1>Jewellery Guides</h1>
+            </div>
+            <div>
+                <h5>Check out our ready made guides to make your buying easier.</h5>
+            </div>
+        </div>
+        <div id="find">
+            <img src="Captures.JPG" />
+            <img src="newCapture.JPG" />
+        </div>
+        <div id="us">
+            <div>
+                <h1>Connect With Us</h1>
+            </div>
+            <div>
+                <h5>We are always available to guide you at your convenience</h5>
+            </div>
+        </div>
+        <div id="connect">
+            <img src="10Capture.JPG" />
+            <img src="11Capture.JPG" />
+            <img src="13Capture.JPG" />
+        </div>
+        <div id="footer">
+            <div id="main">
+                <div id="left">
+                    <div>
+                        <div>
+                            <h3>Useful Links</h3>
+                        </div>
+                        <div>
+                            <p>Delivery Information</p>
+                        </div>
+                        <div>
+                            <p> International Shipping</p>
+                        </div>
+                        <div>
+                            <p>Payment Options</p>
+                        </div>
+                        <div>
+                            <p> Track Your Order </p>
+                        </div>
+                        <div>
+                            <p>Returns</p>
+                        </div>
+                        <div>
+                            <p> Find a Store</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Information</h3>
+                        </div>
+                        <div>
+                            <p>Careers</p>
+                        </div>
+                        <div>
+                            <p>Blog</p>
+                        </div>
+                        <div>
+                            <p> Offers & Contest Details</p>
+                        </div>
+                        <div>
+                            <p> Help & FAQS</p>
+                        </div>
+                        <div>
+                            <p> About Tanishq</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>Contact Us</h3>
+                        </div>
+                        <div><i class="fa-regular fa-envelope"></i>
+                            <p>Write to Us</p>
+                        </div>
+                        <div><i class="fa-solid fa-phone"></i>
+                            <p>1800-266-0123</p>
+                        </div>
+                        <div><i class="fa-regular fa-message"></i>
+                            <p> Chat with Us</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="right">
+                    <div>
+                        <h4>Download the Tanishq App Now</h4>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="Capturef1.JPG" />
+                        </div>
+                        <div>
+                            <img src="Capturej2.JPG" />
+                        </div>
+
+
+                    </div>
+                    <div>
+                        <h3>Follow Us On</h3>
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/facebook.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/twitter.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/instagram.svg" />
+                    </div>
+                </div>
+            </div>
+            <div id="end">
+                <div>
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/visa.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/master.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/paypal.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/maestro.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/rupay.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/axis.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/icici.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/diners.svg" />
+                    <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/amex.svg" />
+                </div>
+                <div>
+                    <p>© 2023 Titan Company Limited. All Rights Reserved.</br>
+                        Terms & Conditions
+                        |
+                        Privacy Policy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            var currentuser = JSON.parse(localStorage.getItem("T_currentuser"));
+
+            if (!!currentuser) {
+                var divfromHtml = document.getElementById("login");
+                var logoutdiv = document.getElementById("logout");
+                var button = `<button onclick="logout()">logout<button>`
+                var name = `<p>${currentuser.email}</p>`;
+                divfromHtml.innerHTML = name;
+                logoutdiv.innerHTML = button;
+            } else {
+                alert("currentuser absent");
+            }
+        }
+        function logout() {
+            alert("logout success");
+            localStorage.removeItem("T_currentuser");
+            window.location.reload();
+        }
+    </script>
+</body>
+
+</html>

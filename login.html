@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <style>
+        #screen {
+            width: 50%;
+            height: 500px;
+            border: 1px solid grey;
+            border-radius: 30px;
+            margin: auto;
+            margin-top: 60px;
+            display: flex;
+        }
+
+        #left {
+            width: 70%;
+            height: 500px;
+            /* border: 1px solid red; */
+        }
+
+        #login {
+            width: 50%;
+            height: 100px;
+            /* border: 1px solid red; */
+            margin: auto;
+            color: brown;
+        }
+
+        #code {
+            width: 80%;
+            height: 130px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        #code>:nth-child(1) {
+            width: 25%;
+            height: 37px;
+            border: 1px solid grey;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #code>:nth-child(2) {
+            width: 55%;
+            height: 40px;
+            border: 1px solid grey;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        #code>:nth-child(3) {
+            width: 100%;
+            height: 40px;
+            border: 1px solid grey;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #right {
+            width: 30%;
+            height: 500px;
+            /* border: 1px solid red; */
+        }
+
+        #right>img {
+            width: 100%;
+            height: 500px;
+            /* border: 1px solid red; */
+        }
+
+        #button {
+            width: 40%;
+            height: 25px;
+            /* border: 1px solid red; */
+            margin-left: 10%;
+            margin-top: 50px;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        #button>div:nth-child(1) {
+            width: 10%;
+            height: 18px;
+            border: 1px solid grey;
+
+        }
+
+        #button>div:nth-child(2) {
+            width: 75%;
+            height: 25px;
+            /* border: 1px solid red; */
+            margin-left: 20px;
+        }
+
+        #button>div:nth-child(2)>p {
+            margin-top: -0.1px;
+            color: grey;
+        }
+
+        #terms {
+            width: 70%;
+            height: 20px;
+            /* border: 1px solid red; */
+            margin: auto;
+            display: flex;
+            margin-top: 25px;
+            font-size: 14px;
+        }
+
+        #terms>div:nth-child(1) {
+            width: 44%;
+            height: 20px;
+            /* border: 1px solid red; */
+            color: grey;
+        }
+
+        #terms>div:nth-child(2) {
+            width: 56%;
+            height: 20px;
+            /* border: 1px solid red; */
+            color: brown;
+        }
+
+        #otp {
+            width: 35%;
+            height: 50px;
+            margin: auto;
+            border: 1px solid brown;
+            background-color: brown;
+            color: white;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 5px;
+
+        }
+        #otp>button{
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            outline: none;
+            border: none;
+            background-color: brown;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        @media screen and (max-width:650px) {
+            #screen {
+                width: 70%;
+                height: 500px;
+            }
+
+            #left {
+                width: 90%;
+                height: 500px;
+                margin: auto;
+            }
+
+            #terms {
+                display: none;
+            }
+
+            #code>:nth-child(1) {
+                display: none;
+            }
+
+            #code>:nth-child(2) {
+                width: 100%;
+                height: 40px;
+
+            }
+
+            #right {
+                display: none;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <form onsubmit="login(event)">
+    <div id="screen">
+       
+        <div id="left">
+            <div id="login">
+                <h1>Login Or Signup</h1>
+            </div>
+            <div id="code">
+                <fieldset>
+                    <legend>code</legend>
+                    <label>+91<select>+92</select></label>
+                </fieldset>
+                <input id="uemail" type="email" placeholder="Enter your email" />
+                <input id="upassword" type="password" placeholder="Enter your password" />
+
+            </div>
+            <div id="button">
+                <div></div>
+                <div>
+                    <p>Remember Me</p>
+                </div>
+            </div>
+            <div id="terms">
+                <div>
+                    <p>By continuing, I agree to </p>
+                </div>
+                <div>
+                    <p> Terms of Use & Privacy Policy</p>
+                </div>
+            </div>
+            <div id="otp">
+                <button onclick="login(event)">Login</button>
+            </div>
+        </div>
+        <div id="right">
+            <img src="https://th.bing.com/th/id/OIP.DAHIigwweGJ7mC_npGZ5tAHaKE?w=139&h=190&c=7&r=0&o=5&pid=1.7" />
+        </div>
+   
+    </div>
+</form>
+    <script src="./login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/5e60e11a93.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple page</title>
+    <link href="./mproduct.css" rel="stylesheet" type="text/css"/>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 100%;
+            height: 3100px;
+            /* border: 5px solid red; */
+        }
+
+        #navbar {
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid red; */
+            background-color: #f2e9e9;
+            display: flex;
+            /* justify-content: space-between; */
+        }
+
+        #navbar>div:nth-child(1) {
+            width: 15%;
+            height: 80px;
+            /* border: 1px solid red; */
+            /* text-align: right; */
+
+        }
+
+        #navbar>div:nth-child(1)>img {
+            width: 42%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 13px;
+            margin-left: 35%;
+
+        }
+
+        #navbar>div:nth-child(2) {
+            width: 53%;
+            height: 45px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 7px;
+            display: flex;
+        }
+
+        #navbar>div:nth-child(2)>input {
+            width: 80%;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-top: 5px;
+            border: none;
+            margin-left: 2%;
+            font-size: 15px;
+        }
+
+        #navbar>div:nth-child(2)>img {
+            width: 4.5%;
+            height: 24px;
+            /* border: 1px solid red; */
+            margin-top: 12px;
+            margin-left: 2%;
+        }
+
+        #navbar>div:nth-child(3) {
+            width: 24%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 25px;
+            margin-left: 3%;
+            /* background-color: white; */
+            border-radius: 3px;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #navbar>div:nth-child(3)>div {
+            width: 22%;
+            height: 45px;
+            /* border: 1px solid red; */
+        }
+
+        #navbar>div:nth-child(3)>div>img {
+            width: 36%;
+            height: 24px;
+            /* border: 1px solid red; */
+            margin-left: 27%;
+            box-sizing: border-box;
+            /* margin-top: 5px; */
+        }
+
+        #navbar>div:nth-child(3)>div>div {
+            width: 100%;
+            height: 15px;
+            /* border: 1px solid red; */
+        }
+
+        #navbar>div:nth-child(3)>div>div>p {
+            color: grey;
+            font-size: 13px;
+            text-align: center;
+        }
+
+        #second {
+            width: 90%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            margin: auto;
+            color: rgb(81, 79, 79);
+            font-size: 14px;
+            /* border-bottom: 1px solid rgb(209, 207, 207); */
+        }
+
+        #second>div {
+            color: #000;
+            font-size: 14px;
+        }
+
+        #second>div:nth-child(1) {
+            width: 9.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 15px;
+        }
+
+        #second>div:nth-child(2) {
+            width: 3.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(3) {
+            width: 5.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(4) {
+            width: 6%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(5) {
+            width: 3.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(6) {
+            width: 3%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(7) {
+            width: 8.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(8) {
+            width: 4.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(9) {
+            width: 10.5%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(10) {
+            width: 12%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #second>div:nth-child(11) {
+            width: 3%;
+            /* border: 1px solid red; */
+            margin-top: 18px;
+            margin-left: 30px;
+        }
+
+        #third {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+            /* justify-content: space-around; */
+            margin: auto;
+            margin-top: 10px;
+            color: rgb(81, 79, 79);
+            font-size: 14px;
+            border-top: 1px solid rgb(174, 171, 171);
+
+        }
+
+        #third>div {
+            width: 10%;
+            height: 50px;
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+
+        #third>div:nth-child(1) {
+            width: 5%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 100px;
+            justify-content: space-between;
+        }
+
+        #third>div:nth-child(2) {
+            width: 10.8%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 55px;
+            justify-content: space-between;
+        }
+
+        #third>div:nth-child(3) {
+            width: 7%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 65px;
+            justify-content: space-between;
+        }
+
+        #third>div:nth-child(4) {
+            width: 6.8%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 65px;
+            justify-content: space-between;
+        }
+
+        #third>div:nth-child(5) {
+            width: 6%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 65px;
+            justify-content: space-between;
+        }
+
+        #third>div:nth-child(6) {
+            width: 9.2%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 58px;
+            justify-content: space-between;
+        }
+
+        #third>div:nth-child(7) {
+            width: 11.5%;
+            height: 50px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            /* padding-left: 5.5%; */
+            padding-top: 17px;
+            margin-left: 58px;
+            justify-content: space-between;
+        }
+
+        #forth {
+            width: 100%;
+            height: 65px;
+            border: 1px solid rgb(82, 79, 79);
+            display: flex;
+            /* justify-content: space-around; */
+            margin: auto;
+            margin-top: 10px;
+            color: rgb(81, 79, 79);
+            font-size: 14px;
+            /* border-top: 1px solid rgb(174, 171, 171); */
+
+        }
+
+        #forth>div {
+            width: 68%;
+            height: 55px;
+            /* border: 1px solid red; */
+            margin-left: 15.8%;
+            display: flex;
+        }
+
+        #forth>div>div {
+            width: 33%;
+            height: 45px;
+            /* border: 1px solid red; */
+            display: flex;
+            font-size: 20px;
+            margin-top: 8px;
+            border-left: 1px solid rgb(183, 182, 182);
+        }
+
+        #forth>div>div>img {
+            width: 28px;
+            height: 28px;
+            margin-top: 9px;
+            margin-left: 60px;
+            margin-right: 15px;
+        }
+
+        #forth>div>div>p {
+            padding-top: 17px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgb(36, 1, 36);
+        }
+
+        #forth>div>div:nth-child(3) {
+            border-right: 1px solid rgb(183, 182, 182);
+        }
+
+        #home {
+            width: 88%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            display: flex;
+        }
+
+        #home>div:nth-child(1) {
+            width: 6%;
+            height: 20px;
+            margin-top: 15px;
+            /* border: 1px solid red; */
+            border-right: 1px solid brown;
+            box-sizing: border-box;
+            padding-top: 2px;
+        }
+
+        #home>div:nth-child(2) {
+            width: 10%;
+            height: 20px;
+            margin-top: 15px;
+            text-align: center;
+            border-left: 1px solid brown;
+            color: brown;
+            font-weight: 900;
+            box-sizing: border-box;
+            padding-top: 2px;
+        }
+
+        #design {
+            width: 88%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 10px;
+            display: flex;
+        }
+
+        #design>div:nth-child(1) {
+            width: 12%;
+            height: 25px;
+            margin-top: 10px;
+            /* border: 1px solid red; */
+            border-right: 1px solid black;
+            font-size: 20px;
+            padding-bottom: 4px;
+        }
+
+        #design>div:nth-child(2) {
+            width: 15%;
+            height: 30px;
+            margin-top: 10px;
+            font-size: 22px;
+            text-align: center;
+            border-left: 1px solid black;
+            font-weight: 900;
+            box-sizing: border-box;
+            padding-top: 5px;
+        }
+
+        #campare {
+            width: 88%;
+            height: 70px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #campare>div:nth-child(1) {
+            width: 20%;
+            height: 70px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            color: grey;
+            display: flex;
+
+        }
+
+        #campare>div:nth-child(1)>img {
+            width: 35px;
+            height: 35px;
+            margin-top: 18px;
+            margin-left: 55px;
+        }
+
+        #campare>div:nth-child(1)>h4 {
+            width: 35px;
+            height: 35px;
+            margin-top: 28px;
+            margin-left: 10px;
+        }
+
+        #campare>div:nth-child(2) {
+            width: 25%;
+            height: 70px;
+            border: 1px solid brown;
+            border-radius: 10px;
+            color: grey;
+            display: flex;
+        }
+
+        #campare>div:nth-child(2)>i {
+            width: 35px;
+            height: 35px;
+            margin-top: 28px;
+            margin-left: 25px;
+        }
+
+        #campare>div:nth-child(2)>h4 {
+
+            height: 35px;
+            margin-top: 28px;
+            margin-left: 30px;
+            color: brown;
+        }
+
+        #mains {
+            width: 88%;
+            height: 1900px;
+            /* border: 2px solid red; */
+            margin-left: 6%;
+            margin-top: 20px;
+            display: flex;
+            /* flex-wrap: wrap; */
+            /* justify-content: space-between; */
+        }
+        #practice_product{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: start;
+            /* justify-content: space-between; */
+
+
+          
+        }
+
+        #sp{
+            width: 22.5%;
+            height: 100%;
+            border: 1px solid rgb(172, 170, 170);
+            display: flex;
+            border-radius: 5px;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 22px;
+            margin-top: 20px;
+            /* align-items: center; */
+            
+
+        }
+        #sp:hover{
+            border: 2px solid brown;
+        }
+        #sp>img{
+            width: 100%;
+            height: 45%;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        #sp>div:nth-child(2){
+            margin-left: 20px;
+        }
+
+        #sp>div:nth-child(3){
+            margin-left: 20px;
+        }
+        #sp>div:nth-child(4){
+            width: 42%;
+            height: 8%;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding-left: 20px;
+        }
+        #sp>div:nth-child(5){
+            width: 80%;
+            height: 12%;
+            margin-left: 10%;
+            border: 1px solid rgb(184, 183, 183);
+            background-color: rgba(141, 16, 16, 0.705);
+            display: flex;
+            color: white;
+            font-weight: bolder;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding-left: 23%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        #see {
+            width: 15%;
+            height: 40px;
+            border: 1px solid grey;
+            border-radius: 5px;
+            margin-left: 42.5%;
+            font-size: 18px;
+            font-weight: 900;
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 8px;
+            margin-top: 55px;
+        }
+
+        #footer {
+            width: 100%;
+            height: 630px;
+            border: 1px solid #f2e9e9;
+            margin-top: 50px;
+            background-color: #f2e9e9;
+        }
+
+        #main {
+            width: 88%;
+            height: 400px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid black;
+        }
+
+        #left {
+            width: 70%;
+            height: 400px;
+            /* border: 1px solid red; */
+            display: flex;
+
+        }
+
+        #left>div {
+            width: 33.3%;
+            height: 400px;
+            /* border: 1px solid red; */
+
+        }
+
+        #left>div>div:nth-child(1) {
+            width: 100%;
+            height: 70px;
+            /* border: 1px solid red; */
+            color: rgb(151, 5, 151);
+        }
+
+        #left>div>div {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid red; */
+            font-size: 20px;
+            color: grey;
+        }
+
+        #left>div:nth-child(3)>div {
+            display: flex;
+
+        }
+
+        #left>div:nth-child(3)>div>i {
+            margin-right: 30px;
+            font-size: 25px;
+        }
+
+        #right {
+            width: 27%;
+            height: 400px;
+            /* border: 1px solid red; */
+        }
+
+        #right>div:nth-child(1) {
+            width: 91%;
+            height: 70px;
+            /* border: 1px solid red; */
+            color: rgb(151, 5, 151);
+            font-size: 20px;
+            margin-left: 5%;
+        }
+
+        #right>div:nth-child(2) {
+            width: 91%;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+        }
+
+        #right>div:nth-child(2)>div {
+            width: 48%;
+            height: 50px;
+            /* border: 1px solid red; */
+        }
+
+        #right>div:nth-child(2)>div:nth-child(1)>img {
+            width: 100%;
+            height: 40px;
+            /* border: 10px solid red; */
+            border-radius: 10px;
+        }
+
+        #right>div:nth-child(2)>div:nth-child(2)>img {
+            width: 100%;
+            height: 40px;
+            /* border: 10px solid red; */
+            border-radius: 10px;
+        }
+
+        #right>div:nth-child(3) {
+            width: 91%;
+            height: 25px;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: 5%;
+        }
+
+        #end {
+            width: 88%;
+            height: 100px;
+            /* border: 1px solid red; */
+            margin-left: 6%;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #end>div:nth-child(1) {
+            width: 62%;
+            height: 80px;
+            /* border: 1px solid red; */
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        #end>div:nth-child(1)>img {
+            width: 8%;
+            height: 22px;
+            /* border: 1px solid red; */
+            margin-top: 20px;
+        }
+
+        #end>div:nth-child(2) {
+            width: 29.5%;
+            height: 80px;
+            /* border: 1px solid red; */
+            box-sizing: border-box;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <div id="screen">
+            <div id="navbar">
+                <div>
+                    <img
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Tanishq_Logo.svg/1024px-Tanishq_Logo.svg.png" />
+                </div>
+                <div>
+                    <input type="text" placeholder="Search for Gold Jewellery, Diamond Jewellery and more..." />
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNvbXBvbmVudF8yMTdfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDI3IDI3IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNyAyNzsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7c3Ryb2tlLXdpZHRoOjEuMnB4O30KCS5zdDF7ZmlsbDpub25lO30KCS5zdDJ7ZmlsbDojODMyNzI5O3N0cm9rZS13aWR0aDoxLjJweDt9Cgkuc3Qze29wYWNpdHk6MC44O30KCS5zdDR7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1taXRlcmxpbWl0OjEwO30KCS5zdDV7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS13aWR0aDoxO3N0cm9rZS1saW5lam9pbjpyb3VuZDt9Cgkuc3Q2e2ZpbGw6bm9uZTtzdHJva2U6IzgzMjcyOTtzdHJva2Utd2lkdGg6MTt9Cjwvc3R5bGU+CjxnPgoJPGNpcmNsZSBpZD0iRWxsaXBzZV8xMiIgY2xhc3M9InN0MCIgY3g9IjEzLjMiIGN5PSIxMy41IiByPSIxMiIvPgoJPHBhdGggaWQ9IlBhdGhfMjUzIiBjbGFzcz0ic3QxIiBkPSJNMCwwaDI3djI3SDBWMHoiLz4KCTxnIGlkPSJQYXRoXzQzOCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMy43NyA0LjAxMSkiPgoJCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik05LjUsMEMxNC44LDAsMTksNC4zLDE5LDkuNWMwLDUuMi00LjMsOS41LTkuNSw5LjVDNC4yLDE5LDAsMTQuNywwLDkuNUMwLDQuMiw0LjMsMCw5LjUsMHoiLz4KCQk8cGF0aCBjbGFzcz0ic3QyIiBkPSJNOS41LDAuNWMtNSwwLTksNC05LDlzNCw5LDksOXM5LTQsOS05UzE0LjUsMC41LDkuNSwwLjUgTTkuNSwwQzE0LjgsMCwxOSw0LjIsMTksOS41UzE0LjgsMTksOS41LDE5CgkJCVMwLDE0LjcsMCw5LjVTNC4zLDAsOS41LDB6Ii8+Cgk8L2c+Cgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNS4yNDIgNS40NSkiPgoJCTxnIGlkPSJjIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJPGcgaWQ9Ikdyb3VwXzE0MzQ2IiBjbGFzcz0ic3QzIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDAiIGNsYXNzPSJzdDEiIGQ9Ik0wLDB2MTZoMTZWMEgweiBNMTUsMTVIMVYxaDE0TDE1LDE1eiIvPgoJCQk8L2c+CgkJPC9nPgoJCTxnIGlkPSJiLTIiPgoJCQk8ZyBpZD0iYy0yIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA1IDAuMDUpIj4KCQkJCTxnIGlkPSJHcm91cF8xNDM0NyIgY2xhc3M9InN0MyI+CgkJCQkJPHBhdGggaWQ9IlBhdGhfMTQ0NSIgY2xhc3M9InN0MSIgZD0iTTAsMHYxNmgxNlYwSDB6IE0xNSwxNUgxVjFoMTRMMTUsMTV6Ii8+CgkJCQk8L2c+CgkJCTwvZz4KCQkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuODk0IDIuNjcpIj4KCQkJCTxwYXRoIGlkPSJQYXRoXzE0NDYiIGNsYXNzPSJzdDQiIGQ9Ik03LjIsOC4yQzUuNyw4LjIsNC41LDcsNC41LDUuNXMxLjItMi43LDIuNy0yLjdTOS44LDQsOS44LDUuNWMwLDAsMCwwLDAsMAoJCQkJCUM5LjgsNyw4LjYsOC4yLDcuMiw4LjJ6Ii8+CgkJCQk8cGF0aCBpZD0iUGF0aF8xNDQ3IiBjbGFzcz0ic3Q1IiBkPSJNMTMsMnY3LjRjMCwwLjEtMC4xLDAuMi0wLjIsMC4yYzAsMCwwLDAsMCwwSDEuNmMtMC4xLDAtMC4yLTAuMS0wLjMtMC4yYzAsMCwwLDAsMCwwVjIKCQkJCQljMC0wLjEsMC4xLTAuMiwwLjMtMC4yaDEuOGwxLjEtMS42SDEwbDEsMS42aDEuOEMxMi45LDEuOCwxMywxLjksMTMsMnoiLz4KCQkJCTxnIGlkPSJSZWN0YW5nbGVfOTk0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuOTkgMy4wMDIpIj4KCQkJCQk8cmVjdCB4PSIwIiB5PSIwIiBjbGFzcz0ic3QwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIi8+CgkJCQkJPHBvbHlnb24gY2xhc3M9InN0NiIgcG9pbnRzPSIwLjUsMC41IDAuNSwwLjUgMC41LDAuNSAJCQkJCSIvPgoJCQkJPC9nPgoJCQk8L2c+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=" />
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4zLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAzMCAzMCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMzAgMzA7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtmaWxsOm5vbmU7fQ0KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojNjMxNjE3O3N0cm9rZS13aWR0aDoxLjE7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQ0KPC9zdHlsZT4NCjxnIGlkPSJNaWNyb3Bob25lX0hvdmVyIj4NCgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMSAxKSI+DQoJCTxnIGlkPSJjIj4NCgkJCTxwYXRoIGlkPSJQYXRoXzE0MDIiIGNsYXNzPSJzdDAiIGQ9Ik0wLDB2MjhoMjhWMEwwLDB6IE0yNi4yLDI2LjJIMS44VjEuOGgyNC41VjI2LjJ6Ii8+DQoJCTwvZz4NCgkJPGcgaWQ9ImQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYuOTkyIDIuMzc0KSI+DQoJCQk8ZyBpZD0iR3JvdXBfMTQzMTIiPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDMiIGNsYXNzPSJzdDEiIGQ9Ik0xMS41LDkuNVYyLjlDMTEuNiwwLjMsOS42LTEuOSw3LTJDNC40LTEuOSwyLjQsMC4zLDIuNSwyLjl2Ni42Yy0wLjEsMi42LDEuOSw0LjgsNC41LDQuOQ0KCQkJCQlDOS42LDE0LjMsMTEuNiwxMi4xLDExLjUsOS41eiIvPg0KCQkJCTxwYXRoIGlkPSJQYXRoXzE0MDQiIGNsYXNzPSJzdDEiIGQ9Ik0wLDcuNHYzLjljMCw0LjQsMy4xLDcuOSw3LDcuOXM3LTMuNSw3LTcuOVY3LjQiLz4NCgkJCQk8bGluZSBpZD0iTGluZV8xMTUiIGNsYXNzPSJzdDEiIHgxPSI3IiB5MT0iMTkuMSIgeDI9IjciIHkyPSIyMy45Ii8+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                    <img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik00LjA4LDExLjA3YzAtMy44NiwzLjEzLTYuOTksNi45OS02Ljk5czYuOTksMy4xMyw2Ljk5LDYuOTktMy4xMyw2Ljk5LTYuOTksNi45OWMtMy44NiwwLTYuOTktMy4xMy02Ljk5LTYuOTloMFptMTkuNDIsMTEuMzNsLTUuODctNS44N2MyLjkzLTMuNTIsMi41Ny04LjcxLS44MS0xMS44cy04LjU5LTIuOTctMTEuODIsLjI3Yy0zLjI0LDMuMjMtMy4zNSw4LjQ0LS4yNywxMS44MnM4LjI4LDMuNzMsMTEuOCwuODFsNS44Nyw1Ljg3LDEuMS0xLjFaIi8+PC9zdmc+" />
+                </div>
+                <div>
+                    <div>
+                        <img
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyNi4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyOCAyOCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjggMjg7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyI+DQoJLnN0MHtjbGlwLXBhdGg6dXJsKCNTVkdJRF8wMDAwMDE0NzkxMzg0Nzg0NTA1MDEwMjA1MDAwMDAwOTgxNjUwODMxODQwMjc0MjcxOV8pO30NCgkuc3Qxe29wYWNpdHk6MC40Njt9DQoJLnN0MntmaWxsOm5vbmU7fQ0KCS5zdDN7ZmlsbDpub25lO3N0cm9rZTojODMyNzI5O3N0cm9rZS1saW5lam9pbjpyb3VuZDt9DQo8L3N0eWxlPg0KPGc+DQoJPGRlZnM+DQoJCTxyZWN0IGlkPSJTVkdJRF8xXyIgd2lkdGg9IjI4IiBoZWlnaHQ9IjI4Ii8+DQoJPC9kZWZzPg0KCTxjbGlwUGF0aCBpZD0iU1ZHSURfMDAwMDAwMjY4NDE4MTM5MjEwNjUyNzkyNzAwMDAwMTIxNjI5NzI0MzkxMDQ1MDMxNzFfIj4NCgkJPHVzZSB4bGluazpocmVmPSIjU1ZHSURfMV8iICBzdHlsZT0ib3ZlcmZsb3c6dmlzaWJsZTsiLz4NCgk8L2NsaXBQYXRoPg0KCTxnIGlkPSJTdG9yZV9JY29uX0RlZmF1bHRfU3RhdGVfMSIgc3R5bGU9ImNsaXAtcGF0aDp1cmwoI1NWR0lEXzAwMDAwMDI2ODQxODEzOTIxMDY1Mjc5MjcwMDAwMDEyMTYyOTcyNDM5MTA0NTAzMTcxXyk7Ij4NCgkJPGcgaWQ9ImIiPg0KCQkJPGcgaWQ9ImMiPg0KCQkJCTxnIGlkPSJHcm91cF8xNDIwOSIgY2xhc3M9InN0MSI+DQoJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNjkiIGNsYXNzPSJzdDIiIGQ9Ik0wLDB2MjhoMjhWMEgweiBNMjYuMiwyNi4ySDEuOFYxLjhoMjQuNVYyNi4yeiIvPg0KCQkJCTwvZz4NCgkJCTwvZz4NCgkJCTxnIGlkPSJkIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzLjUwNCAzLjUwNCkiPg0KCQkJCTxnIGlkPSJlIj4NCgkJCQkJPGcgaWQ9Ikdyb3VwXzE0MjExIj4NCgkJCQkJCTxyZWN0IGlkPSJSZWN0YW5nbGVfOTkyNCIgeD0iOC43IiB5PSI4LjciIGNsYXNzPSJzdDMiIHdpZHRoPSIxMS4xIiBoZWlnaHQ9IjExLjkiLz4NCgkJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNzAiIGNsYXNzPSJzdDMiIGQ9Ik0yMSw0LjN2NC4zSDBWNC4zTDMuNSwwaDE0TDIxLDQuM3oiLz4NCgkJCQkJCTxsaW5lIGlkPSJMaW5lXzgzIiBjbGFzcz0ic3QzIiB4MT0iNC45IiB5MT0iOC40IiB4Mj0iNC45IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NCIgY2xhc3M9InN0MyIgeDE9IjEwLjUiIHkxPSI4LjQiIHgyPSIxMC41IiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NSIgY2xhc3M9InN0MyIgeDE9IjE2LjEiIHkxPSI4LjQiIHgyPSIxNi4xIiB5Mj0iNC41Ii8+DQoJCQkJCQk8bGluZSBpZD0iTGluZV84NiIgY2xhc3M9InN0MyIgeDE9IjEuMiIgeTE9IjguNCIgeDI9IjEuMiIgeTI9IjIxIi8+DQoJCQkJCTwvZz4NCgkJCQk8L2c+DQoJCQk8L2c+DQoJCTwvZz4NCgk8L2c+DQo8L2c+DQo8L3N2Zz4NCg==" />
+                        <div>
+                            <p>STORES</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO3N0cm9rZS13aWR0aDoxLjRweDt9PC9zdHlsZT48L2RlZnM+PHBhdGggY2xhc3M9ImIiIGQ9Ik0xMywxNS43NWMtMy42NywwLTExLDEuODQtMTEsNS41djIuNzVIMjR2LTIuNzVjMC0zLjY2LTcuMzMtNS41LTExLTUuNVptMC0xMy43NWMtMy4wNCwwLTUuNSwyLjQ2LTUuNSw1LjVzMi40Niw1LjUsNS41LDUuNSw1LjUtMi40Niw1LjUtNS41LTIuNDYtNS41LTUuNS01LjVabTAsMTYuNWMzLjcxLDAsNy45NywxLjc3LDguMjUsMi43NUg0Ljc1Yy4zMi0uOTksNC41NS0yLjc1LDguMjUtMi43NW0wLTEzLjc1YzEuNTEsMCwyLjc1LDEuMjQsMi43NSwyLjc1cy0xLjI0LDIuNzUtMi43NSwyLjc1LTIuNzUtMS4yNC0yLjc1LTIuNzUsMS4yNC0yLjc1LDIuNzUtMi43NSIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMTMsMTUuNzVjLTMuNjcsMC0xMSwxLjg0LTExLDUuNXYyLjc1SDI0di0yLjc1YzAtMy42Ni03LjMzLTUuNS0xMS01LjVabTAtMTMuNzVjLTMuMDQsMC01LjUsMi40Ni01LjUsNS41czIuNDYsNS41LDUuNSw1LjUsNS41LTIuNDYsNS41LTUuNS0yLjQ2LTUuNS01LjUtNS41Wm0wLDE2LjVjMy43MSwwLDcuOTcsMS43Nyw4LjI1LDIuNzVINC43NWMuMzItLjk5LDQuNTUtMi43NSw4LjI1LTIuNzVtMC0xMy43NWMxLjUxLDAsMi43NSwxLjI0LDIuNzUsMi43NXMtMS4yNCwyLjc1LTIuNzUsMi43NS0yLjc1LTEuMjQtMi43NS0yLjc1LDEuMjQtMi43NSwyLjc1LTIuNzUiLz48L3N2Zz4=" />
+                        <div>
+                            <p>ACCOUNT</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjEuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9ImEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IgoJIHZpZXdCb3g9IjAgMCAyNiAyNiIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjYgMjY7IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDojODMyNzI5O30KCS5zdDF7ZmlsbDpub25lO3N0cm9rZTojRUZFM0UzO30KPC9zdHlsZT4KPGc+Cgk8cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTMuMSwyMC41TDEzLDIwLjZsLTAuMS0wLjFDNy4xLDE1LjQsMy4zLDEyLDMuMyw4LjZjMC0yLjQsMS44LTQuMSw0LjMtNC4xYzEuOSwwLDMuNywxLjIsNC40LDIuOGgyLjMKCQljMC42LTEuNiwyLjUtMi44LDQuMy0yLjhjMi40LDAsNC4zLDEuOCw0LjMsNC4xQzIyLjgsMTIuMSwxOC45LDE1LjQsMTMuMSwyMC41eiBNMTguNSwyLjJjLTIuMSwwLTQuMiwxLTUuNSwyLjUKCQljLTEuMy0xLjUtMy40LTIuNS01LjUtMi41QzMuNywyLjIsMC44LDUsMC44LDguN2MwLDQuNSw0LjEsOC4xLDEwLjQsMTMuNmwxLjgsMS41bDEuOC0xLjZjNi4zLTUuNSwxMC40LTkuMiwxMC40LTEzLjYKCQlDMjUuMiw1LDIyLjIsMi4yLDE4LjUsMi4yeiIvPgoJPHBhdGggY2xhc3M9InN0MSIgZD0iTTEzLjEsMjAuNUwxMywyMC42bC0wLjEtMC4xQzcuMSwxNS40LDMuMywxMiwzLjMsOC42YzAtMi40LDEuOC00LjEsNC4zLTQuMWMxLjksMCwzLjcsMS4yLDQuNCwyLjhoMi4zCgkJYzAuNi0xLjYsMi41LTIuOCw0LjMtMi44YzIuNCwwLDQuMywxLjgsNC4zLDQuMUMyMi44LDEyLjEsMTguOSwxNS40LDEzLjEsMjAuNXoiLz4KCTxwYXRoIGNsYXNzPSJzdDEiIGQ9Ik0xOC41LDIuMmMtMi4xLDAtNC4yLDEtNS41LDIuNWMtMS4zLTEuNS0zLjQtMi41LTUuNS0yLjVDMy43LDIuMiwwLjgsNSwwLjgsOC43YzAsNC41LDQuMSw4LjEsMTAuNCwxMy42CgkJbDEuOCwxLjVsMS44LTEuNmM2LjMtNS41LDEwLjQtOS4yLDEwLjQtMTMuNkMyNS4yLDUsMjIuMiwyLjIsMTguNSwyLjJ6Ii8+CjwvZz4KPC9zdmc+Cg==" />
+                        <div>
+                            <p>WISHLIST</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img
+                            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIGlkPSJhIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PGRlZnM+PHN0eWxlPi5ie2ZpbGw6IzgzMjcyOTt9LmN7ZmlsbDpub25lO3N0cm9rZTojZWZlM2UzO308L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYiIgZD0iTTIwLjAyLDIwLjAyYy0xLjI5LDAtMi4zMywxLjA1LTIuMzMsMi4zNHMxLjA0LDIuMzQsMi4zMywyLjM0LDIuMzQtMS4wNSwyLjM0LTIuMzQtMS4wNS0yLjM0LTIuMzQtMi4zNFptLTExLjcsMGMtMS4yOSwwLTIuMzMsMS4wNS0yLjMzLDIuMzRzMS4wNCwyLjM0LDIuMzMsMi4zNCwyLjM0LTEuMDUsMi4zNC0yLjM0LTEuMDUtMi4zNC0yLjM0LTIuMzRabS0uOTgtMTQuMDRoMTQuMjJsLTMuMjMsNS44NUgxMC4xbC0yLjc3LTUuODVabTEwLjk5LDguMTljLjg4LDAsMS42NS0uNDgsMi4wNS0xLjIxbDQuMTktNy41OWMuNDMtLjc3LS4xMy0xLjczLTEuMDItMS43M0g2LjIybC0xLjEtMi4zNEgxLjI5VjMuNjRIMy42M0w3Ljg1LDEyLjUybC0xLjU4LDIuODZjLS44NSwxLjU3LC4yNywzLjQ3LDIuMDUsMy40N2gxNC4wNHYtMi4zNEg4LjMxbDEuMjktMi4zNGg4LjcyWiIvPjxwYXRoIGNsYXNzPSJjIiBkPSJNMjAuMDIsMjAuMDJjLTEuMjksMC0yLjMzLDEuMDUtMi4zMywyLjM0czEuMDQsMi4zNCwyLjMzLDIuMzQsMi4zNC0xLjA1LDIuMzQtMi4zNC0xLjA1LTIuMzQtMi4zNC0yLjM0Wm0tMTEuNywwYy0xLjI5LDAtMi4zMywxLjA1LTIuMzMsMi4zNHMxLjA0LDIuMzQsMi4zMywyLjM0LDIuMzQtMS4wNSwyLjM0LTIuMzQtMS4wNS0yLjM0LTIuMzQtMi4zNFptLS45OC0xNC4wNGgxNC4yMmwtMy4yMyw1Ljg1SDEwLjFsLTIuNzctNS44NVptMTAuOTksOC4xOWMuODgsMCwxLjY1LS40OCwyLjA1LTEuMjFsNC4xOS03LjU5Yy40My0uNzctLjEzLTEuNzMtMS4wMi0xLjczSDYuMjJsLTEuMS0yLjM0SDEuMjlWMy42NEgzLjYzTDcuODUsMTIuNTJsLTEuNTgsMi44NmMtLjg1LDEuNTcsLjI3LDMuNDcsMi4wNSwzLjQ3aDE0LjA0di0yLjM0SDguMzFsMS4yOS0yLjM0aDguNzJaIi8+PC9zdmc+" />
+                        <div>
+                            <p>CART</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="second">
+                <div>
+                    <p>ALL JEWELLERY</p>
+                </div>
+                <div>
+                    <p>GOLD</p>
+                </div>
+                <div>
+                    <p>DIAMOND</p>
+                </div>
+                <div>
+                    <p>EARRINGS</p>
+                </div>
+                <div>
+                    <p>RINGS</p>
+                </div>
+                <div>
+                    <p>MIA</p>
+                </div>
+                <div>
+                    <p>COLLECTIONS</p>
+                </div>
+                <div>
+                    <p>RIVAAH</p>
+                </div>
+                <div>
+                    <p>GOLDEN HARVEST</p>
+                </div>
+                <div>
+                    <p>CORPORATE GIFTING</p>
+                </div>
+                <div>
+                    <p>MORE</p>
+                </div>
+            </div>
+            <div id="third">
+                
+                <div>
+                    <p>PRICE</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <p>JEWELLERY TYPE</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <p>PRODUCT</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <p>GENDER</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <p>BRAND</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <p>METAL COLOR</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <p>SEE MORE FILTERS</p><i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+            <div id="forth">
+                <div>
+                    <div>
+                        <img
+                            src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/561145a0-90bc-4819-b68f-83aa6e69e3c9/2.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-561145a0-90bc-4819-b68f-83aa6e69e3c9-otFknxR" />
+                        <p>STORE LOCATOR</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/3c7d5d7c-9c8d-4413-9b13-bebdb61e738e/1.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-3c7d5d7c-9c8d-4413-9b13-bebdb61e738e-otbciiW" />
+                        <p>BOOK AN APPOINTMENT</p>
+                    </div>
+                    <div>
+                        <img
+                            src="https://www.tanishq.co.in/wps/wcm/connect/tanishqrt/5694b3ee-507c-4bda-ab50-09b05a0a1949/3.svg?MOD=AJPERES&CACHEID=ROOTWORKSPACE.Z18_90IA1H80O0T6206GQH590V3000-5694b3ee-507c-4bda-ab50-09b05a0a1949-otbcuJM" />
+                        <p>LIVE VIDEO CALL</p>
+                    </div>
+                </div>
+            </div>
+            <div id="home">
+                <div>HOME</div>
+                <div>DIAMOND</div>
+            </div>
+            <div id="design">
+                <div>
+                    <h2>Diamond</h2>
+                </div>
+                <div>
+                    <p>8075 DESIGNS</p>
+                </div>
+            </div>
+            <div id="campare">
+                <div><img
+                        src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI2LjIuMSwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNvbXBvbmVudF8xNDNfMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IgoJIHk9IjBweCIgdmlld0JveD0iMCAwIDQ0IDQ0IiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NCA0NDsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPgoJLnN0MHtmaWxsOiNGRkZGRkY7fQoJLnN0MXtmaWxsOm5vbmU7fQoJLnN0MntmaWxsOm5vbmU7c3Ryb2tlOiM4MzI3Mjk7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQo8L3N0eWxlPgo8Zz4KCTxjaXJjbGUgaWQ9IkVsbGlwc2VfMiIgY2xhc3M9InN0MCIgY3g9IjIyIiBjeT0iMjIiIHI9IjIyIi8+Cgk8ZyBpZD0iYiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNiA2KSI+CgkJPGcgaWQ9ImMiPgoJCQk8cGF0aCBpZD0iUGF0aF8xMzQyIiBjbGFzcz0ic3QxIiBkPSJNMCwwdjMyaDMyVjBMMCwweiBNMzAsMzBIMlYyaDI4VjMweiIvPgoJCTwvZz4KCQk8ZyBpZD0iZCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4wMDMgMi4wMDIpIj4KCQkJPGcgaWQ9Ikdyb3VwXzE0MTk1Ij4KCQkJCTxjaXJjbGUgaWQ9IkVsbGlwc2VfOCIgY2xhc3M9InN0MiIgY3g9IjE0IiBjeT0iMTQiIHI9IjE0Ii8+CgkJCQk8ZyBpZD0iR3JvdXBfMTQxOTMiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE0LjAwNyA4LjA0NCkiPgoJCQkJCTxwYXRoIGlkPSJQYXRoXzEzNDMiIGNsYXNzPSJzdDIiIGQ9Ik0zLDBMMCwzbDMsMyIvPgoJCQkJCTxsaW5lIGlkPSJMaW5lXzQ2IiBjbGFzcz0ic3QyIiB4MT0iMCIgeTE9IjMiIHgyPSI5IiB5Mj0iMyIvPgoJCQkJPC9nPgoJCQkJPGcgaWQ9Ikdyb3VwXzE0MTk0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1LjAwNiAxNC4wNDQpIj4KCQkJCQk8cGF0aCBpZD0iUGF0aF8xMzQ0IiBjbGFzcz0ic3QyIiBkPSJNNiwwbDMsM0w2LDYiLz4KCQkJCQk8bGluZSBpZD0iTGluZV80NyIgY2xhc3M9InN0MiIgeDE9IjkiIHkxPSIzIiB4Mj0iMCIgeTI9IjMiLz4KCQkJCTwvZz4KCQkJPC9nPgoJCTwvZz4KCTwvZz4KPC9nPgo8L3N2Zz4K" />
+                    <h4>COMPARE</h4>
+                </div>
+                <div>
+
+                    <h4>SORT BY : BEST SELLERS</h4>
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+            </div>
+           
+            <div id="mains">
+
+                <div id="practice_product">
+                <!-- <div>
+                    <img 
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D3PTSLTAAA09.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Entrancing Spirals Diamond St...</div>
+                    <div>
+                        <p>₹ 35760,</p>
+                        <p>₹ 37642</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D2I2SMYADB09.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Sleek Chevron Diamon...</div>
+                    <div>
+                        <p>₹ 34692,</p>
+                        <p>₹ 36518</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/502995SDPADA02_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Elegant Teardrop Sha...</div>
+                    <div>
+                        <p>₹ 36793,</p>
+                        <p>₹ 38729</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50F1D1DFYAGA02_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Cutesy Diamond Shap...</div>
+                    <div>
+                        <p>₹ 36793,</p>
+                        <p>₹ 38729</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/502994DIMADA09_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Cubic Gold And Diamo...</div>
+                    <div>
+                        <p>₹ 34323,</p>
+                        <p>₹ 36130</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/503120DCPADA09_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Opulent Abstract Dia...</div>
+                    <div>
+                        <p>₹ 43960,</p>
+                        <p>₹ 46274</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D2J1FAOAA09.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Electric Sqyare Diam...</div>
+                    <div>
+                        <p>₹ 27641,</p>
+                        <p>₹ 29096</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/503419FJLAA02.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Romantic Heart Rose</div>
+                    <div>
+                        <p>₹ 31488,</p>
+                        <p>₹ 33148</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/503414FCZAC02.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Floral Pattern Diamon...</div>
+                    <div>
+                        <p>₹ 29456,</p>
+                        <p>₹ 31006</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/503117FJOAA02.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Equisite 18 Karat Yell...</div>
+                    <div>
+                        <p>₹ 35872,</p>
+                        <p>₹ 37760</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D2I1FHAAA02_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Inverted Teardrop Fing...</div>
+                    <div>
+                        <p>₹ 27157,</p>
+                        <p>₹ 25871</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D2I1FHAAA02_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Elaborate Rose Gold F...</div>
+                    <div>
+                        <p>₹ 35422,</p>
+                        <p>₹ 36524</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D2I1FIYAA09_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Unique V-style Diamo...</div>
+                    <div>
+                        <p>₹ 31068,</p>
+                        <p>₹ 36524</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/502998FQRAA09_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Geometric Square Desi...</div>
+                    <div>
+                        <p>₹ 58384,</p>
+                        <p>₹ 61457</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50D2I1FFEAA09_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Glam Wispey Diamond...</div>
+                    <div>
+                        <p>₹ 59519,</p>
+                        <p>₹ 61457</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>
+                <div>
+                    <img
+                        src="https://staticimg.titan.co.in/Tanishq/Catalog/50E2D1FDVAA02_1.jpg?impolicy=pqmed&imwidth=640" />
+                    <div>Timeless Dazzlling Dia...</div>
+                    <div>
+                        <p>₹ 68294,</p>
+                        <p>₹ 71889</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                </div>-->
+            </div> 
+        </div>
+            <div id="see">
+                <p>See More Products</p>
+            </div>
+            <div id="footer">
+                <div id="main">
+                    <div id="left">
+                        <div>
+                            <div>
+                                <h3>Useful Links</h3>
+                            </div>
+                            <div>
+                                <p>Delivery Information</p>
+                            </div>
+                            <div>
+                                <p> International Shipping</p>
+                            </div>
+                            <div>
+                                <p>Payment Options</p>
+                            </div>
+                            <div>
+                                <p> Track Your Order </p>
+                            </div>
+                            <div>
+                                <p>Returns</p>
+                            </div>
+                            <div>
+                                <p> Find a Store</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Information</h3>
+                            </div>
+                            <div>
+                                <p>Careers</p>
+                            </div>
+                            <div>
+                                <p>Blog</p>
+                            </div>
+                            <div>
+                                <p> Offers & Contest Details</p>
+                            </div>
+                            <div>
+                                <p> Help & FAQS</p>
+                            </div>
+                            <div>
+                                <p> About Tanishq</p>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>Contact Us</h3>
+                            </div>
+                            <div><i class="fa-regular fa-envelope"></i>
+                                <p>Write to Us</p>
+                            </div>
+                            <div><i class="fa-solid fa-phone"></i>
+                                <p>1800-266-0123</p>
+                            </div>
+                            <div><i class="fa-regular fa-message"></i>
+                                <p> Chat with Us</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="right">
+                        <div>
+                            <h4>Download the Tanishq App Now</h4>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="Capturef1.JPG" />
+                            </div>
+                            <div>
+                                <img src="Capturej2.JPG" />
+                            </div>
+
+
+                        </div>
+                        <div>
+                            <h3>Follow Us On</h3>
+                            <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/facebook.svg" />
+                            <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/twitter.svg" />
+                            <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/instagram.svg" />
+                        </div>
+                    </div>
+                </div>
+                <div id="end">
+                    <div>
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/visa.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/master.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/paypal.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/maestro.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/rupay.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/axis.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/icici.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/diners.svg" />
+                        <img src="https://staticimg.titan.co.in/Tanishq/Banners/icons/footer/amex.svg" />
+                    </div>
+                    <div>
+                        <p>© 2023 Titan Company Limited. All Rights Reserved.</br>
+                            Terms & Conditions
+                            |
+                            Privacy Policy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <script>
+        window.onload = function () {
+
+            var divtoshowproduct = document.getElementById("practice_product");
+
+            var productfromls = JSON.parse(localStorage.getItem("tpractice_product"));
+            var finaldata = "";
+            // console.log(productfromls, "productfromls");
+
+            for (var i = 0; i < productfromls.length; i++) {
+                // console.log(productfromls);
+                finaldata += `<div onclick = 'redirect(${JSON.stringify(productfromls[i])})' id="sp">
+
+                    <img src=${productfromls[i].pimage} />
+                    <div><h3>${productfromls[i].pname}</h3></div>
+                    <div>
+                        <h4>₹ ${productfromls[i].pprice}</h4>
+                        <p>₹ 36524</p>
+                    </div>
+                    <div>
+                        <p>Women</p>
+                        <p>Earrings</p>
+                    </div>
+                    <div>
+                        <p>Explore Now</p>
+                    </div>
+                    </div>`;                
+            }
+            // console.log(finaldata, "finaldata here");
+            divtoshowproduct.innerHTML = finaldata;
+        }
+        function redirect(parameter){
+            var vrushabh = JSON.stringify(parameter);
+            alert("working");
+            localStorage.setItem("tcurrent_product", vrushabh);
+            window.location.href = `./singleproduct.html`;
+
+        }
+    </script>
+</body>
+
+</html>
+
+
